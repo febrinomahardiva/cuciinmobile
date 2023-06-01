@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Cuciin Mobile</string>
+
+    <!--Sign In-->
+    <string name="signin_intro">Sign In</string>
+    <string name="username_signin">Username</string>
+    <string name="password_signin">Password</string>
+    <string name="haveAccount">Do you have an account?</string>
+
+    <!--Sign Up-->
+    <string name="signup_intro">Sign Up</string>
+    <string name="username_signup">Username</string>
+    <string name="fullname_signup">Fullname</string>
+    <string name="email_signup">Email</string>
+    <string name="password_signup">Password</string>
+    <string name="conf_password_signup">Confirm Password</string>
+    <string name="alreadyAccount">Already have an account?</string>
+    <string name="bt_confirm_si">Confirm</string>
+
+    <!--Dashboard-->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="username_dashboard">Username</string>
+    <string name="title_contacus">Contact Us</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_booking">Booking</string>
+    <string name="desc_booking">Jika anda ingin datang ke tempat kami, anda tidak perlu menunggunya lagi, cukup melihat antrian tempat kami di rumah anda, lalu membooking antrian.  anda hanya melihat waktu yang kosong, tanpa menunggu, ketika datantg langsung cuci kendaraan anda dengan super bersih dan kinclong</string>
+    <string name="bt_reservation">Make a reservation</string>
+    <string name="img_booking">vector booking</string>
+    <string name="bar_detailing">img.Detailing</string>
+    <string name="bar_regular_wash">img.RegularWash</string>
+    <string name="bar_interior_cleaning">img.InteriorCleaning</string>
+    <string name="bar_fogging">img.Fogging</string>
+
+    <!--Contact Us-->
+    <string name="img_location">img.location</string>
+    <string name="img_email">img.email</string>
+    <string name="img_instagram">img.instagram</string>
+    <string name="img_whatsapp">img.whatsapp</string>
+    <string name="desc_whatsapp">087710142977</string>
+    <string name="desc_instagram">\@OfficialCuciin</string>
+    <string name="desc_email">officialCuciin@gmail.com</string>
+    <string name="desc_location">Bandung, West Java, Indonesia</string>
+    <string name="contact_us">Contact Us</string>
+
+    <!--Profile-->
+    <string name="account">Account</string>
+    <string name="history">History</string>
+    <string name="img_account">img.account</string>
+    <string name="img_hhistory">img.hhistory</string>
+    <string name="img_about_us">About Us</string>
+    <string name="img_aboutus">img.aboutus</string>
+    <string name="text_about_us">About Us</string>
+    <string name="bt_logout">Log Out</string>
+
+    <!--About Us-->
+    <string name="text_aboutcuciin">CUCIIN adalah aplikasi booking cuci kendaraan berbasis online yang bertujuan untuk mempermudah pelanggan agar tidak perlu lagi mengantri lama di tempat pencucian.</string>
+    <string name="title_aboutus">About Us</string>
+    <string name="febri_img">febri.img</string>
+    <string name="yudha_img">yudha.img</string>
+    <string name="title_febri">67062130\nFebrino Mahardiva Akbar</string>
+    <string name="title_yudha">6706213073\nElang Andhika Yudha Prawira</string>
+    <string name="title_dimas">6706213080\nDimas Prayuda</string>
+    <string name="dimas_img">dimas.img</string>
+
+    <!--Rating-->
+    <string name="cuciin_img">cuciin.img</string>
+    <string name="rating">Rating</string>
+    <string name="profile_img">profile.img</string>
+
+    <!--Booking Description-->
+    <string name="phonecard_img">phonecard.img</string>
+    <string name="details_descBooking">Details</string>
+    <string name="no_booking">No Booking: </string>
+    <string name="status">Status:</string>
+    <string name="phone_numberDesc">Phone Number: </string>
+    <string name="fullname_desc">Fullname:</string>
+    <string name="vehicleType_desc">Vehicle Type:</string>
+    <string name="date_desc">Booking Date:</string>
+    <string name="time_desc">Booking Time:</string>
+    <string name="numberPlate_desc">Number Plate:</string>
+    <string name="bt_description">OK</string>
+
+    <!--Account-->
+    <string name="email_account">Email</string>
+    <string name="confirm_new_password_account">Confirm New Password</string>
+    <string name="fullname_account">Fullname</string>
+    <string name="username_account">Username</string>
+    <string name="bt_update">Update</string>
+    <string name="new_password">New Password</string>
+    <string name="services">Our Services</string>
+    <string name="dateandtime"><![CDATA[Select Date & Time]]></string>
+    <string name="vehicle_type">Car</string>
+    <string name="vehicle_type2">Motorcycle</string>
+    <string name="regular_service">Regular Washing</string>
+    <string name="fogging_service">Fogging</string>
+    <string name="interior_service">Interior Cleaning</string>
+    <string name="detailing_service">Detailing</string>
+    <string name="btn_booking">Booking</string>
+    <string name="telp">Number Phone</string>
+    <string name="plate">Plate Number</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="choose_payments">Choose Payments</string>
+    <string name="output_vehicle">Car</string>
+    <string name="output_plateNumber">B4NDG</string>
+    <string name="desc_services">Services</string>
+    <string name="output_price">Rp. 100.000</string>
+    <string name="output_price2">Total Price: Rp. 100.000</string>
+    <string name="desc_payment_method">Payment Method</string>
+    <string name="bt_cash">Cash</string>
+    <string name="cashless">Cashless</string>
+    <string name="bca_mobile_img">bca_mobile.img</string>
+</resources>

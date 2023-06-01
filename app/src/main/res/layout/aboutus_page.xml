@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/card_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/title_aboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/title_aboutus"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/aboutCuciin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:padding="30dp"
+            android:text="@string/text_aboutcuciin"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toTopOf="@+id/title_aboutUs"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/image_febri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/febri_img"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/aboutCuciin"
+            app:srcCompat="@drawable/ellipse_19"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/title_febri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/montserrat"
+            android:padding="8dp"
+            android:text="@string/title_febri"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/image_febri"
+            app:layout_constraintTop_toBottomOf="@id/aboutCuciin" />
+
+        <ImageView
+            android:id="@+id/image_yudha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/yudha_img"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/title_febri"
+            app:srcCompat="@drawable/ellipse_20"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/title_yudha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/montserrat"
+            android:padding="8dp"
+            android:text="@string/title_yudha"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@id/image_yudha"
+            app:layout_constraintTop_toBottomOf="@id/title_febri" />
+
+        <ImageView
+            android:id="@+id/image_dimas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/dimas_img"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/title_yudha"
+            app:srcCompat="@drawable/ellipse_19"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/title_dimas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/montserrat"
+            android:padding="8dp"
+            android:text="@string/title_dimas"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/image_dimas"
+            app:layout_constraintTop_toBottomOf="@id/title_yudha" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

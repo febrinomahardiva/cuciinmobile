@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/top_card"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/card_deskripsi"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/phonecard_img"
+            app:layout_constraintBottom_toBottomOf="@id/top_card"
+            app:layout_constraintEnd_toEndOf="@id/top_card"
+            app:layout_constraintStart_toStartOf="@id/top_card"
+            app:layout_constraintTop_toTopOf="@id/top_card"
+            app:srcCompat="@drawable/pngtreecalendar_time_monthly_calendar_chart_5324170_1" />
+
+        <TextView
+            android:id="@+id/text_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/services"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_card" />
+
+        <ImageView
+            android:id="@+id/interior_cleaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:contentDescription="@string/bar_interior_cleaning"
+            app:layout_constraintEnd_toStartOf="@+id/foging"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/regular_wash"
+            app:layout_constraintTop_toBottomOf="@id/text_services"
+            app:srcCompat="@drawable/interior"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <ImageView
+            android:id="@+id/detailing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bar_detailing"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_services"
+            app:srcCompat="@drawable/detailing"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <ImageView
+            android:id="@+id/foging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:contentDescription="@string/bar_fogging"
+            app:layout_constraintStart_toEndOf="@id/interior_cleaning"
+            app:layout_constraintTop_toBottomOf="@id/text_services"
+            app:srcCompat="@drawable/foging"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <ImageView
+            android:id="@+id/regular_wash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/bar_regular_wash"
+            app:layout_constraintStart_toEndOf="@+id/detailing"
+            app:layout_constraintTop_toBottomOf="@id/text_services"
+            app:srcCompat="@drawable/regular"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <TextView
+            android:id="@+id/text_dateandtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/dateandtime"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailing" />
+
+        <View
+            android:id="@+id/viewVehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_dateandtime"
+            tools:ignore="MissingConstraints" />
+
+        <RadioGroup
+            android:id="@+id/vehicleTypeRadioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/viewVehicleType"
+            app:layout_constraintStart_toStartOf="@+id/viewVehicleType"
+            app:layout_constraintBottom_toBottomOf="@+id/viewVehicleType"
+            app:layout_constraintTop_toTopOf="@id/viewVehicleType">
+
+            <RadioButton
+                android:id="@+id/carRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/vehicle_type"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/motorcycleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/vehicle_type2"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewVehicleType"
+            tools:ignore="MissingConstraints" />
+
+        <RadioGroup
+            android:id="@+id/servicesRadioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintTop_toTopOf="@+id/view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/regularRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/regular_service"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/foggingRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/fogging_service"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/interiorRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/interior_service"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/detailingRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/detailing_service"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/viewPhone"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/form_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toTopOf="@+id/viewPhone"
+            app:layout_constraintBottom_toBottomOf="@id/viewPhone"
+            app:layout_constraintEnd_toEndOf="@id/viewPhone"
+            app:layout_constraintStart_toStartOf="@id/viewPhone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telp_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/telp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/viewPlate"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPhone"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/form_plate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintTop_toTopOf="@id/viewPlate"
+            app:layout_constraintEnd_toEndOf="@id/viewPlate"
+            app:layout_constraintStart_toStartOf="@id/viewPlate"
+            app:layout_constraintBottom_toBottomOf="@id/viewPlate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plate_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/plate" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_radius"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/btn_booking"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@+id/viewPlate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

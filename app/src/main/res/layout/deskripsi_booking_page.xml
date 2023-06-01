@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/top_card"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/card_deskripsi"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/vecteezy_3d_credit_card_money_financial_security_for_online_shopping_9315289_706_1"
+            app:layout_constraintStart_toStartOf="@id/top_card"
+            app:layout_constraintEnd_toEndOf="@id/top_card"
+            app:layout_constraintTop_toTopOf="@id/top_card"
+            app:layout_constraintBottom_toBottomOf="@id/top_card"
+            android:contentDescription="@string/phonecard_img" />
+
+        <TextView
+            android:id="@+id/text_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details_descBooking"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/montserrat_semibold"
+            app:layout_constraintTop_toBottomOf="@id/top_card"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_details"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/no_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_booking"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/no_booking" />
+
+        <TextView
+            android:id="@+id/fullname_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fullname_desc"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/status" />
+
+        <TextView
+            android:id="@+id/phoneNumb_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_numberDesc"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/fullname_desc" />
+
+        <TextView
+            android:id="@+id/vehicleType_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicleType_desc"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumb_desc" />
+
+        <TextView
+            android:id="@+id/date_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_desc"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/vehicleType_desc" />
+
+        <TextView
+            android:id="@+id/time_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_desc"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/date_desc" />
+
+        <TextView
+            android:id="@+id/numberPlate_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numberPlate_desc"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/time_desc" />
+
+        <Button
+            android:id="@+id/bt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_radius"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/bt_description"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@+id/numberPlate_desc"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

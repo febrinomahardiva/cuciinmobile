@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/top_card"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/card_deskripsi"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/phonecard_img"
+            app:layout_constraintBottom_toBottomOf="@id/top_card"
+            app:layout_constraintEnd_toEndOf="@id/top_card"
+            app:layout_constraintStart_toStartOf="@id/top_card"
+            app:layout_constraintTop_toTopOf="@id/top_card"
+            app:srcCompat="@drawable/vecteezy_3d_credit_card_money_financial_security_for_online_shopping_9315289_706_1" />
+
+        <TextView
+            android:id="@+id/text_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/details_descBooking"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_card" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/card_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_details"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/desc_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/vehicle"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/output_plateNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/output_plateNumber"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/desc_vehicle" />
+
+
+        <TextView
+            android:id="@+id/output_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/output_vehicle"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/output_plateNumber" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/output_vehicle"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <TextView
+            android:id="@+id/desc_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/desc_services"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <View
+            android:id="@+id/serviceView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/card_shadow"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/desc_service"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <TextView
+            android:id="@+id/output_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/output_plateNumber"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/serviceView"
+            app:layout_constraintStart_toStartOf="@id/serviceView"
+            app:layout_constraintTop_toTopOf="@id/serviceView" />
+
+        <TextView
+            android:id="@+id/output_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/output_price"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/serviceView"
+            app:layout_constraintEnd_toEndOf="@id/serviceView"
+            app:layout_constraintTop_toTopOf="@id/serviceView" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/serviceView"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <TextView
+            android:id="@+id/desc_paymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/desc_payment_method"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+        <TextView
+            android:id="@+id/output_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/output_price2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/desc_paymentMethod" />
+
+
+        <RadioGroup
+            android:id="@+id/group_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/output_price2"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            tools:ignore="MissingConstraints,UselessParent">
+
+            <Button
+                android:id="@+id/bt_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bt_cash"/>
+
+            <Button
+                android:id="@+id/bt_cashless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cashless"
+                android:layout_marginStart="15dp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_radius"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/bt_description"
+            app:layout_constraintTop_toBottomOf="@id/group_button"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
