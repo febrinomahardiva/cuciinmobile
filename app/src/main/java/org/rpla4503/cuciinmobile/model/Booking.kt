@@ -2,6 +2,8 @@ package org.rpla4503.cuciinmobile.model
 
 data class Booking(
     var id: String = "",
+    var userId: String = "",
+    var status: String = "",
     var date: String = "",
     var time: String = "",
     var vehicleType: String = "",

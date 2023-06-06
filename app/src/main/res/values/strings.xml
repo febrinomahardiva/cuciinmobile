@@ -38,8 +38,8 @@
     <string name="img_whatsapp">img.whatsapp</string>
     <string name="desc_whatsapp">087710142977</string>
     <string name="desc_instagram">\@OfficialCuciin</string>
-    <string name="desc_email">Cuciin@gmail.com</string>
-    <string name="desc_location">Bandung, West Java</string>
+    <string name="desc_email">officialCuciin@gmail.com</string>
+    <string name="desc_location">Bandung, West Java, Indonesia</string>
     <string name="contact_us">Contact Us</string>
 
     <!--Profile-->
@@ -115,4 +115,16 @@
     <string name="logout_confirmation">Apakah anda yakin untuk keluar?</string>
     <string name="logout">Exit</string>
     <string name="cancel">Cancel</string>
+    <string name="bt_confirmPayment">Confirm</string>
+    <string name="livinPayment">Livin</string>
+    <string name="bca_mobilePayment">BCA Mobile</string>
+    <string name="danaPayment">Dana</string>
+    <string name="link_ajaPayment">Link Aja</string>
+    <string name="current_password_account">Current Password</string>
+    <string name="livin_logo">livin.png</string>
+    <string name="bca_logo">bca.png</string>
+    <string name="dana_logo">dana.png</string>
+    <string name="linkaja_logo">linkaja.png</string>
+    <string name="text_livin">1400067484567\na.n Admin Cuciin</string>
+    <string name="text_bca">0084739621\na.n Admin Cuciin</string>
 </resources>

@@ -264,7 +264,7 @@
 <!--        </GridLayout>-->
 
         <View
-            android:id="@+id/viewVehicleType"
+            android:id="@+id/viewDate"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginStart="15dp"
@@ -274,6 +274,146 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_dateandtime"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="@id/viewDate"
+            app:layout_constraintStart_toStartOf="@id/viewDate"
+            app:layout_constraintTop_toTopOf="@+id/viewDate"
+            app:layout_constraintBottom_toBottomOf="@id/viewDate">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dateInput"
+                android:layout_width="242dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/black"
+                android:hint="Masukkan tanggal"
+                android:fontFamily="@font/montserrat"
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/btnTanggal"
+                android:layout_width="53dp"
+                android:layout_height="56dp"
+                android:layout_gravity="right"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/dateInput"
+                android:src="@drawable/baseline_date_range_24" />
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/timeGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:columnCount="4"
+            android:rowCount="2"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/viewDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Kode komponen ImageView untuk jam -->
+            <ImageView
+            android:id="@+id/jam9"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/jam_9" />
+
+            <ImageView
+                android:id="@+id/jam10"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/jam_10" />
+
+            <ImageView
+                android:id="@+id/jam11"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/jam_11" />
+
+            <ImageView
+                android:id="@+id/jam12"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/jam_12" />
+
+            <ImageView
+                android:id="@+id/jam13"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/jam_13" />
+
+            <ImageView
+                android:id="@+id/jam14"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/jam_14" />
+
+            <ImageView
+                android:id="@+id/jam15"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/jam_15" />
+
+            <ImageView
+                android:id="@+id/jam16"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/jam_16" />
+
+        </GridLayout>
+
+        <View
+            android:id="@+id/viewVehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeGrid"
             tools:ignore="MissingConstraints" />
 
         <RadioGroup
@@ -311,7 +451,7 @@
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="200dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginTop="8dp"
@@ -322,7 +462,7 @@
             tools:ignore="MissingConstraints" />
 
         <RadioGroup
-            android:id="@+id/servicesRadioGroup"
+            android:id="@+id/servicesTypeRadioGroup"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -334,9 +474,9 @@
             app:layout_constraintBottom_toBottomOf="@id/view"
             app:layout_constraintTop_toTopOf="@+id/view">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
 
                 <RadioButton
                     android:id="@+id/regularRadioButton"
@@ -356,11 +496,11 @@
                     android:text="@string/fogging_service"
                     android:textColor="@color/black" />
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
 
                 <RadioButton
                     android:id="@+id/interiorRadioButton"
@@ -375,12 +515,12 @@
                     android:id="@+id/detailingRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/montserrat"
                     android:text="@string/detailing_service"
-                    android:textColor="@color/black" />
-            </LinearLayout>
+                    android:textColor="@color/black"
+                    />
+<!--            </LinearLayout>-->
 
         </RadioGroup>
 
@@ -397,26 +537,34 @@
             app:layout_constraintTop_toBottomOf="@+id/view"
             tools:ignore="MissingConstraints" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/form_telp"
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:id="@+id/telpLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintTop_toTopOf="@+id/viewPhone"
-            app:layout_constraintBottom_toBottomOf="@id/viewPhone"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
             app:layout_constraintEnd_toEndOf="@id/viewPhone"
-            app:layout_constraintStart_toStartOf="@id/viewPhone">
+            app:layout_constraintStart_toStartOf="@id/viewPhone"
+            app:layout_constraintTop_toTopOf="@+id/viewPhone"
+            app:layout_constraintBottom_toBottomOf="@id/viewPhone">
+
+
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/telp_input"
+                android:id="@+id/phoneNumberInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/black"
+                android:hint="@string/telp"
                 android:fontFamily="@font/montserrat"
-                android:hint="@string/telp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
 
         <View
             android:id="@+id/viewPlate"
@@ -431,29 +579,37 @@
             app:layout_constraintTop_toBottomOf="@+id/viewPhone"
             tools:ignore="MissingConstraints" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/form_plate"
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:id="@+id/plateLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginEnd="50dp"
-            app:layout_constraintTop_toTopOf="@id/viewPlate"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
             app:layout_constraintEnd_toEndOf="@id/viewPlate"
             app:layout_constraintStart_toStartOf="@id/viewPlate"
+            app:layout_constraintTop_toTopOf="@+id/viewPlate"
             app:layout_constraintBottom_toBottomOf="@id/viewPlate">
 
+
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/plate_input"
+                android:id="@+id/plateNumberInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/black"
+                android:hint="@string/plate"
                 android:fontFamily="@font/montserrat"
-                android:hint="@string/plate" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
 
         <Button
-            android:id="@+id/button_book"
+            android:id="@+id/bookingButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

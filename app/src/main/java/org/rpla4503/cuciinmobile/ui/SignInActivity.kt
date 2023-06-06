@@ -6,10 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import org.rpla4503.cuciinmobile.databinding.SigninPageBinding
 import org.rpla4503.cuciinmobile.db.DatabaseHandler
+import org.rpla4503.cuciinmobile.session.SessionManager
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var binding: SigninPageBinding
     private lateinit var databaseHandler: DatabaseHandler
+    private lateinit var sessionManager: SessionManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +19,14 @@ class SignInActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         databaseHandler = DatabaseHandler(this)
+
+        sessionManager = SessionManager(this)
+
+        if (sessionManager.isLoggedIn()) {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         binding.toSignUp.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
@@ -43,6 +53,7 @@ class SignInActivity : AppCompatActivity() {
         databaseHandler.getUserSignIn(username) { user ->
             if (user != null && user.password == password) {
                 // Login berhasil
+                sessionManager.createLoginSession(user.id)
                 val intent = Intent(this, MainActivity::class.java)
 
                 startActivity(intent)

@@ -44,44 +44,47 @@
             android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/card_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_details"
             tools:ignore="MissingConstraints" />
+
         <View
             android:id="@+id/view2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/card_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view"
             tools:ignore="MissingConstraints" />
+
         <View
             android:id="@+id/view3"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/card_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view2"
             tools:ignore="MissingConstraints" />
+
         <View
             android:id="@+id/view4"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/card_view"
             app:layout_constraintEnd_toEndOf="parent"
@@ -90,43 +93,164 @@
             tools:ignore="MissingConstraints" />
 
         <RadioGroup
+            android:id="@+id/paymentRadioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
             app:layout_constraintStart_toStartOf="@+id/view"
-            app:layout_constraintTop_toTopOf="@+id/view"
-            tools:ignore="MissingConstraints">
-
-
-            <RadioButton
-                android:id="@+id/rb_bca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
+            app:layout_constraintTop_toTopOf="@+id/view">
 
             <RadioButton
                 android:id="@+id/rb_livin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/livinPayment"/>
+
+            <RadioButton
+                android:id="@+id/rb_bca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="23dp"
-                android:text="RadioButton" />
+                android:text="@string/bca_mobilePayment" />
 
             <RadioButton
                 android:id="@+id/rb_dana"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="RadioButton" />
+                android:text="@string/danaPayment" />
 
             <RadioButton
-                android:id="@+id/eb_linkaja"
+                android:id="@+id/rb_linkaja"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="23dp"
-                android:text="RadioButton" />
-
-
+                android:text="@string/link_ajaPayment" />
         </RadioGroup>
+
+        <ImageView
+            android:id="@+id/livin_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/livin_logo"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:srcCompat="@drawable/livin" />
+
+        <TextView
+            android:id="@+id/text_livin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:textAlignment="textEnd"
+            android:text="@string/text_livin"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintEnd_toStartOf="@+id/livin_logo"
+            app:layout_constraintTop_toTopOf="@id/view" />
+
+        <ImageView
+            android:id="@+id/bca_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bca_logo"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:srcCompat="@drawable/bca_mobile" />
+
+        <TextView
+            android:id="@+id/text_bca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:textAlignment="textEnd"
+            android:text="@string/text_bca"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintBottom_toBottomOf="@id/view2"
+            app:layout_constraintEnd_toStartOf="@+id/bca_logo"
+            app:layout_constraintTop_toTopOf="@id/view2" />
+
+        <ImageView
+            android:id="@+id/dana_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/dana_logo"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="@+id/view3"
+            app:srcCompat="@drawable/dana" />
+
+        <TextView
+            android:id="@+id/text_dana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:textAlignment="textEnd"
+            android:text="@string/text_bca"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintBottom_toBottomOf="@id/view3"
+            app:layout_constraintEnd_toStartOf="@+id/dana_logo"
+            app:layout_constraintTop_toTopOf="@id/view3" />
+
+        <ImageView
+            android:id="@+id/linkaja_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/linkaja_logo"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view4"
+            app:layout_constraintEnd_toEndOf="@+id/view4"
+            app:layout_constraintTop_toTopOf="@+id/view4"
+            app:srcCompat="@drawable/link_aja" />
+
+        <TextView
+            android:id="@+id/text_linkaja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:textAlignment="textEnd"
+            android:text="@string/text_bca"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintBottom_toBottomOf="@id/view4"
+            app:layout_constraintEnd_toStartOf="@+id/linkaja_logo"
+            app:layout_constraintTop_toTopOf="@id/view4" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view4" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/card_view"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/bt_confirmPayment"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/price" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

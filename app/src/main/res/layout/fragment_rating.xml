@@ -45,7 +45,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/textMultilane_rating"
+        android:id="@+id/multilaneRatingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -71,7 +71,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textMultilane_rating"
+        app:layout_constraintTop_toBottomOf="@+id/multilaneRatingText"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

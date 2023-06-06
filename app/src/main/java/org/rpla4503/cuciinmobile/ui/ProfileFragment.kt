@@ -1,14 +1,13 @@
 package org.rpla4503.cuciinmobile.ui
 
-import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import androidx.core.app.ActivityCompat.recreate
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment.findNavController
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.rpla4503.cuciinmobile.R
 import org.rpla4503.cuciinmobile.databinding.FragmentProfileBinding
 import org.rpla4503.cuciinmobile.db.DatabaseHandler
@@ -26,6 +25,7 @@ class ProfileFragment: Fragment() {
     ): View? {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
         databaseHandler = DatabaseHandler(requireContext())
+        sessionManager = SessionManager(requireContext())
         return binding.root
     }
 
@@ -51,23 +51,16 @@ class ProfileFragment: Fragment() {
         }
 
         binding.btLogout.setOnClickListener {
-            showLogoutConfirmationDialog()
+            MaterialAlertDialogBuilder(requireContext()).setTitle("Logout ?")
+                .setMessage("Iya")
+                .setPositiveButton("OK") { _ , _ ->
+                    sessionManager.logout()
+                    val intent = Intent(requireContext(), SignInActivity::class.java)
+                    startActivity(intent)
+                    requireActivity().finish()
+                }.setNegativeButton("No") { _ , _ ->
+                }.show()
+            true
         }
-    }
-
-    private fun showLogoutConfirmationDialog() {
-        val dialogBuilder = AlertDialog.Builder(requireContext())
-        dialogBuilder.setTitle("Keluar aplikasi!")
-            .setMessage("Anda akan keluar aplikasi?")
-            .setPositiveButton("OK") { _, _ ->
-                sessionManager.logout()
-                val message = "Anda telah keluar"
-                val intent = Intent(activity, SignInActivity::class.java)
-                intent.putExtra("toast_message", message)
-                startActivity(intent)
-                activity?.finish()
-            }
-            .setNegativeButton("No", null)
-            .show()
     }
 }

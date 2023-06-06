@@ -22,7 +22,7 @@
             android:contentDescription="@string/profile_img" />
 
         <TextView
-            android:id="@+id/username"
+            android:id="@+id/fullname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/username_dashboard"
