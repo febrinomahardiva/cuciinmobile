@@ -109,4 +109,10 @@
     <string name="bt_cash">Cash</string>
     <string name="cashless">Cashless</string>
     <string name="bca_mobile_img">bca_mobile.img</string>
+    <string name="to_signUp">Sign Up</string>
+    <string name="to_signIn">Sign In</string>
+    <string name="history_title">History</string>
+    <string name="logout_confirmation">Apakah anda yakin untuk keluar?</string>
+    <string name="logout">Exit</string>
+    <string name="cancel">Cancel</string>
 </resources>

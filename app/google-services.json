@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "709976389779",
+    "project_id": "cuciinmobile",
+    "storage_bucket": "cuciinmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709976389779:android:51b369f17ee685822a7566",
+        "android_client_info": {
+          "package_name": "org.rpla4503.cuciinmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709976389779-bu5c07vqt88o4qrsn351o6m4a09rkod0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN2k3Hyu6mLggoSHGOV9hmXrl1Gr2BSx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709976389779-bu5c07vqt88o4qrsn351o6m4a09rkod0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

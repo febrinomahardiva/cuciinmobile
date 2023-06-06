@@ -104,6 +104,165 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/detailing" />
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvTanggal"-->
+<!--                    android:layout_width="114dp"-->
+<!--                    android:layout_height="33dp"-->
+<!--                    android:layout_alignEnd="@+id/inputTanggal"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_marginStart="0dp"-->
+
+<!--                    android:layout_marginEnd="128dp"-->
+<!--                    android:text="Tanggal Booking"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/inputTanggal"-->
+<!--                    android:layout_width="242dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:hint="Masukan tanggal"-->
+<!--                    android:imeOptions="actionNext"-->
+<!--                    android:inputType="date"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/btnTanggal"-->
+<!--                    android:layout_width="53dp"-->
+<!--                    android:layout_height="56dp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginStart="23dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_toEndOf="@+id/inputTanggal"-->
+<!--                    android:src="@drawable/baseline_date_range_24" />-->
+
+
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <GridLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:columnCount="4"-->
+<!--            android:rowCount="2">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/jam9"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam9" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam10"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam10" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam11"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam11" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam12"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam12" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam13"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam13" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam14"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam14" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam15"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam15" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam16"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam16" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam17"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam17" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam18"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam18" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam19"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam19" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/jam20"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="49dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:src="@drawable/jam20" />-->
+<!--        </GridLayout>-->
+
         <View
             android:id="@+id/viewVehicleType"
             android:layout_width="match_parent"

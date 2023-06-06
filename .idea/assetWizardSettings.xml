@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/money/baseline_money_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/date_range/baseline_date_range_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -34,7 +34,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="cash" />
+                            <entry key="outputName" value="baseline_date_range_24" />
                             <entry key="sourceFile" value="/D:\Kuliah\Semester 4\PROYEK TINGKAT 2\Cuciin Mobile" />
                           </map>
                         </option>

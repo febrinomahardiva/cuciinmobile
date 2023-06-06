@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="50dp">
 
         <View
             android:id="@+id/view"
@@ -85,7 +85,7 @@
             app:layout_constraintTop_toBottomOf="@+id/fullname_signup">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/email_inp_signup"
+                android:id="@+id/email_input_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
@@ -100,6 +100,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="50dp"
+            app:passwordToggleEnabled="true"
             app:layout_constraintTop_toBottomOf="@+id/email_signup">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -108,20 +109,21 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
                 android:hint="@string/password_signup"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/confpassword_signup"
+            android:id="@+id/confirmPassword_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="50dp"
+            app:passwordToggleEnabled="true"
             app:layout_constraintTop_toBottomOf="@+id/password_signup">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/confpassword_input_signup"
+                android:id="@+id/confirmPassword_input_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
@@ -130,19 +132,33 @@
 
         <TextView
             android:id="@+id/message_signup"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
             android:fontFamily="@font/montserrat"
             android:text="@string/alreadyAccount"
-            app:layout_constraintTop_toBottomOf="@+id/confpassword_signup"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPassword_signup"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/to_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/background_blue2"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/to_signIn"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPassword_signup"
+            app:layout_constraintStart_toEndOf="@+id/message_signup"
             tools:layout_editor_absoluteX="50dp" />
 
         <Button
-            android:id="@+id/confirm_signin"
+            android:id="@+id/confirm_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
