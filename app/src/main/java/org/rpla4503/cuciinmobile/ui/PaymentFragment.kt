@@ -49,7 +49,8 @@ class PaymentFragment : Fragment() {
 
         binding.btnPay.setOnClickListener {
             val selectedRadioButtonId = binding.paymentRadioGroup.checkedRadioButtonId
-            val selectedRadioButton = binding.paymentRadioGroup.findViewById<RadioButton>(selectedRadioButtonId)
+            val selectedRadioButton =
+                binding.paymentRadioGroup.findViewById<RadioButton>(selectedRadioButtonId)
             val newPaymentType = selectedRadioButton?.text.toString()
 
             val updatePayment = Payment()

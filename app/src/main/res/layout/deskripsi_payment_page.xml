@@ -46,6 +46,7 @@
             android:layout_height="400dp"
             android:layout_marginBottom="50dp"
             android:layout_marginStart="40dp"
+            android:layout_marginBottom="50dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/card_view"
@@ -199,23 +200,23 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
 
-            app:layout_constraintTop_toBottomOf="@id/output_price2"
-            app:layout_constraintStart_toStartOf="@id/view"
             app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/output_price2"
             tools:ignore="MissingConstraints,UselessParent">
 
             <Button
                 android:id="@+id/bt_cash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/bt_cash"/>
+                android:text="@string/bt_cash" />
 
             <Button
                 android:id="@+id/bt_cashless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cashless"
-                android:layout_marginStart="15dp"/>
+                android:layout_marginStart="15dp"
+                android:text="@string/cashless" />
         </RadioGroup>
 
         <Button
@@ -228,10 +229,10 @@
             android:background="@drawable/button_radius"
             android:fontFamily="@font/montserrat_bold"
             android:text="@string/bt_description"
-            app:layout_constraintTop_toBottomOf="@id/group_button"
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintEnd_toEndOf="@id/view"
             app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/group_button"
             tools:ignore="MissingConstraints" />
 
 

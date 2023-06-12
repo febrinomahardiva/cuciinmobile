@@ -38,7 +38,12 @@ class SignUpActivity : AppCompatActivity() {
 
             if (isInputValid(username, fullname, email, password, confirmPassword)) {
                 // Lakukan tindakan setelah validasi berhasil
-                val user = User(username = username, fullname = fullname, email = email, password = password)
+                val user = User(
+                    username = username,
+                    fullname = fullname,
+                    email = email,
+                    password = password
+                )
                 DatabaseHandler(this).addUser(user) { isSuccess ->
                     if (isSuccess) {
                         // Registrasi berhasil
@@ -89,7 +94,13 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 
-    private fun isInputValid(username: String, fullname: String, email: String, password: String, confirmPassword: String): Boolean {
+    private fun isInputValid(
+        username: String,
+        fullname: String,
+        email: String,
+        password: String,
+        confirmPassword: String
+    ): Boolean {
         return username.isNotEmpty() && fullname.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && password == confirmPassword
                 && Patterns.EMAIL_ADDRESS.matcher(email).matches()
     }

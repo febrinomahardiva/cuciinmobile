@@ -9,8 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import org.rpla4503.cuciinmobile.R
 import org.rpla4503.cuciinmobile.databinding.DeskripsiBookingPageBinding
-import org.rpla4503.cuciinmobile.databinding.DeskripsiPaymentPageBinding
-import org.rpla4503.cuciinmobile.databinding.FragmentRatingBinding
 import org.rpla4503.cuciinmobile.db.DatabaseHandler
 import org.rpla4503.cuciinmobile.session.SessionManager
 
@@ -64,7 +62,8 @@ class DescBookingFragment : Fragment() {
                     val bundle = Bundle()
                     bundle.putString("bookingId", getId)
                     ratingFragment.arguments = bundle
-                    val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+                    val transaction: FragmentTransaction =
+                        requireFragmentManager().beginTransaction()
                     transaction.replace(R.id.fragmentContainer, ratingFragment)
                     transaction.addToBackStack(null)
                     transaction.commit()

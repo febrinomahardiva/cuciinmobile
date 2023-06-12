@@ -60,7 +60,8 @@ class SignInActivity : AppCompatActivity() {
                 finish()
             } else {
                 // Login gagal
-                Snackbar.make(binding.root, "Invalid username or password", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "Invalid username or password", Snackbar.LENGTH_SHORT)
+                    .show()
             }
         }
     }

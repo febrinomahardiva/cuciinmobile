@@ -9,8 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="25dp">
+        android:layout_marginTop="50dp">
 
         <View
             android:id="@+id/view"
@@ -22,8 +21,10 @@
             android:background="@drawable/card_view"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
             tools:ignore="MissingConstraints" />
 
         <ImageView
@@ -75,52 +76,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="108dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/desc_whatsapp"
             android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/whatsapp"
             app:layout_constraintStart_toEndOf="@+id/whatsapp"
-            app:layout_constraintTop_toTopOf="@+id/view" />
+            app:layout_constraintTop_toTopOf="@+id/whatsapp" />
 
         <TextView
             android:id="@+id/text_instagram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="188dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/desc_instagram"
             android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/instagram"
             app:layout_constraintStart_toEndOf="@+id/instagram"
-            app:layout_constraintTop_toTopOf="@+id/view" />
+            app:layout_constraintTop_toTopOf="@+id/instagram" />
 
         <TextView
             android:id="@+id/text_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="260dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/desc_email"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@+id/view"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="@+id/email"
             app:layout_constraintStart_toEndOf="@+id/email"
-            app:layout_constraintTop_toTopOf="@+id/view" />
+            app:layout_constraintTop_toTopOf="@+id/email" />
 
         <TextView
             android:id="@+id/text_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="328dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/desc_location"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@+id/view"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="@+id/location"
             app:layout_constraintStart_toEndOf="@+id/location"
-            app:layout_constraintTop_toTopOf="@+id/view" />
+            app:layout_constraintTop_toTopOf="@+id/location" />
 
         <TextView
             android:id="@+id/text_contactus"

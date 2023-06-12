@@ -65,18 +65,21 @@ class RatingFragment : Fragment() {
 
             )
 
-            databaseHandler.addRating(rating){ success ->
-                if (success){
-                    databaseHandler.updateBookingStatus(idBooking, "selesai"){ success ->
-                        if (success){
-                            Toast.makeText(requireContext(), "Rating Berhasil", Toast.LENGTH_SHORT).show()
+            databaseHandler.addRating(rating) { success ->
+                if (success) {
+                    databaseHandler.updateBookingStatus(idBooking, "selesai") { success ->
+                        if (success) {
+                            Toast.makeText(requireContext(), "Rating Berhasil", Toast.LENGTH_SHORT)
+                                .show()
                             val dashboardFragment = DashboardFragment()
-                            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+                            val transaction: FragmentTransaction =
+                                requireFragmentManager().beginTransaction()
                             transaction.replace(R.id.fragmentContainer, dashboardFragment)
                             transaction.addToBackStack(null)
                             transaction.commit()
                         } else {
-                            Toast.makeText(requireContext(), "Rating Gagal", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(requireContext(), "Rating Gagal", Toast.LENGTH_SHORT)
+                                .show()
                         }
                     }
                 } else {

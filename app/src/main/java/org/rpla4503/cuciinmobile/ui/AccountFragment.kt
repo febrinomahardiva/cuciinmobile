@@ -36,7 +36,7 @@ class AccountFragment : Fragment() {
         databaseHandler = DatabaseHandler(requireContext())
         sessionManager = SessionManager(requireContext())
         val id = sessionManager.getUserId().toString() // Ganti dengan email user yang sesuai
-        databaseHandler.getUser(sessionManager.getUserId()!! ) { user ->
+        databaseHandler.getUser(sessionManager.getUserId()!!) { user ->
             user?.let {
                 // Update the UI with the user data
                 getPassword = it.password
@@ -81,7 +81,7 @@ class AccountFragment : Fragment() {
             binding.fullnameText.error = "Masukkan nama dengan format yang benar"
             isValid = false
         }
-        if(fullname.matches(Regex(".*[^\\p{L}\\s].*"))){
+        if (fullname.matches(Regex(".*[^\\p{L}\\s].*"))) {
             binding.fullnameText.error = "Masukkan nama dengan format yang benar"
             isValid = false
 
@@ -139,6 +139,7 @@ class AccountFragment : Fragment() {
 
         updateAccountUser(updatedUser)
     }
+
     private fun updateAccountUser(user: User) {
         MaterialAlertDialogBuilder(requireContext()).setTitle("Perbaharui informasi akun ?")
             .setMessage("Anda akan memperbaharui profile anda")
@@ -155,6 +156,7 @@ class AccountFragment : Fragment() {
             }.setNegativeButton("No") { _, _ ->
             }.show()
     }
+
     private fun showSuccessDialog() {
         MaterialAlertDialogBuilder(requireContext()).setTitle("Update berhasil")
             .setMessage("Update berhasil erhasil diperbaharui")
@@ -163,6 +165,7 @@ class AccountFragment : Fragment() {
                 requireActivity().recreate()
             }.show()
     }
+
     private fun showErrorDialog() {
         Toast.makeText(requireContext(), "Update gagal", Toast.LENGTH_SHORT).show()
     }

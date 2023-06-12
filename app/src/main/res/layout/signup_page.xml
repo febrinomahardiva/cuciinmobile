@@ -13,10 +13,10 @@
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="530dp"
+            android:layout_height="540dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="50dp"
             android:background="@drawable/card_view"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -101,8 +101,8 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="50dp"
-            app:passwordToggleEnabled="true"
-            app:layout_constraintTop_toBottomOf="@+id/email_signup">
+            app:layout_constraintTop_toBottomOf="@+id/email_signup"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password_input_signup"
@@ -120,8 +120,8 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="50dp"
-            app:passwordToggleEnabled="true"
-            app:layout_constraintTop_toBottomOf="@+id/password_signup">
+            app:layout_constraintTop_toBottomOf="@+id/password_signup"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/confirmPassword_input_signup"
@@ -135,8 +135,8 @@
             android:id="@+id/message_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/montserrat"
             android:text="@string/alreadyAccount"
             android:textColor="@color/black"
@@ -148,14 +148,14 @@
             android:id="@+id/to_signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="50dp"
-            android:textColor="@color/background_blue2"
             android:fontFamily="@font/montserrat"
             android:text="@string/to_signIn"
-            app:layout_constraintTop_toBottomOf="@+id/confirmPassword_signup"
+            android:textColor="@color/background_blue2"
             app:layout_constraintStart_toEndOf="@+id/message_signup"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPassword_signup"
             tools:layout_editor_absoluteX="50dp" />
 
         <Button
@@ -163,12 +163,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/button_radius"
             android:fontFamily="@font/montserrat_bold"
             android:text="@string/bt_confirm_si"
+            app:layout_constraintBottom_toBottomOf="@id/view"
             app:layout_constraintEnd_toEndOf="@id/view"
             app:layout_constraintStart_toStartOf="@id/view"
-            app:layout_constraintBottom_toBottomOf="@id/view"
             app:layout_constraintTop_toBottomOf="@+id/message_signup"
             tools:ignore="MissingConstraints" />
 

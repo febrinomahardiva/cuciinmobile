@@ -38,8 +38,8 @@
     <string name="img_whatsapp">img.whatsapp</string>
     <string name="desc_whatsapp">087710142977</string>
     <string name="desc_instagram">\@OfficialCuciin</string>
-    <string name="desc_email">officialCuciin@gmail.com</string>
-    <string name="desc_location">Bandung, West Java, Indonesia</string>
+    <string name="desc_email">Cuciin@gmail.com</string>
+    <string name="desc_location">Bandung, Indonesia</string>
     <string name="contact_us">Contact Us</string>
 
     <!--Profile-->
@@ -57,7 +57,7 @@
     <string name="title_aboutus">About Us</string>
     <string name="febri_img">febri.img</string>
     <string name="yudha_img">yudha.img</string>
-    <string name="title_febri">67062130\nFebrino Mahardiva Akbar</string>
+    <string name="title_febri">6706213034\nFebrino Mahardiva Akbar</string>
     <string name="title_yudha">6706213073\nElang Andhika Yudha Prawira</string>
     <string name="title_dimas">6706213080\nDimas Prayuda</string>
     <string name="dimas_img">dimas.img</string>
@@ -127,4 +127,5 @@
     <string name="linkaja_logo">linkaja.png</string>
     <string name="text_livin">1400067484567\na.n Admin Cuciin</string>
     <string name="text_bca">0084739621\na.n Admin Cuciin</string>
+    <string name="logo_png">logo.png</string>
 </resources>

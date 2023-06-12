@@ -10,7 +10,7 @@ import org.rpla4503.cuciinmobile.databinding.FragmentDashboardBinding
 import org.rpla4503.cuciinmobile.db.DatabaseHandler
 import org.rpla4503.cuciinmobile.session.SessionManager
 
-class DashboardFragment: Fragment() {
+class DashboardFragment : Fragment() {
     private lateinit var binding: FragmentDashboardBinding
     private lateinit var databaseHandler: DatabaseHandler
     private lateinit var sessionManager: SessionManager
@@ -35,7 +35,9 @@ class DashboardFragment: Fragment() {
             }
         }
 
-        databaseHandler.checkPendingBookings(sessionManager.getUserId().toString()) { hasPendingBookings ->
+        databaseHandler.checkPendingBookings(
+            sessionManager.getUserId().toString()
+        ) { hasPendingBookings ->
             if (hasPendingBookings) {
                 // Ada booking yang belum selesai
                 // Lakukan tindakan yang diperlukan di sini
@@ -47,7 +49,9 @@ class DashboardFragment: Fragment() {
             }
         }
         binding.button.setOnClickListener(View.OnClickListener {
-            databaseHandler.checkPendingBookings(sessionManager.getUserId().toString()) { hasPendingBookings ->
+            databaseHandler.checkPendingBookings(
+                sessionManager.getUserId().toString()
+            ) { hasPendingBookings ->
                 if (hasPendingBookings) {
                     // Ada booking yang belum selesai
                     // Lakukan tindakan yang diperlukan di sini

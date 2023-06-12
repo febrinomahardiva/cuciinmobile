@@ -1,12 +1,10 @@
 package org.rpla4503.cuciinmobile.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import org.rpla4503.cuciinmobile.R
 import org.rpla4503.cuciinmobile.databinding.FragmentFormBookingBinding

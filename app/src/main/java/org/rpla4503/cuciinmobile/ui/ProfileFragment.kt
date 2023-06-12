@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.app.ActivityCompat.recreate
 import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.rpla4503.cuciinmobile.R
@@ -13,7 +12,7 @@ import org.rpla4503.cuciinmobile.databinding.FragmentProfileBinding
 import org.rpla4503.cuciinmobile.db.DatabaseHandler
 import org.rpla4503.cuciinmobile.session.SessionManager
 
-class ProfileFragment: Fragment() {
+class ProfileFragment : Fragment() {
     private lateinit var binding: FragmentProfileBinding
     private lateinit var databaseHandler: DatabaseHandler
     private lateinit var sessionManager: SessionManager
@@ -53,12 +52,12 @@ class ProfileFragment: Fragment() {
         binding.btLogout.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext()).setTitle("Logout ?")
                 .setMessage("Iya")
-                .setPositiveButton("OK") { _ , _ ->
+                .setPositiveButton("OK") { _, _ ->
                     sessionManager.logout()
                     val intent = Intent(requireContext(), SignInActivity::class.java)
                     startActivity(intent)
                     requireActivity().finish()
-                }.setNegativeButton("No") { _ , _ ->
+                }.setNegativeButton("No") { _, _ ->
                 }.show()
             true
         }
