@@ -40,6 +40,15 @@ class ProfileFragment : Fragment() {
                 .commit()
         }
 
+        binding.btHistory.setOnClickListener {
+            val historyFragment = HistoryFragment()
+            requireActivity().supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.fragmentContainer, historyFragment)
+                .addToBackStack(null)
+                .commit()
+        }
+
         binding.btAboutus.setOnClickListener {
             val aboutUsFragment = AboutUsFragment()
             requireActivity().supportFragmentManager

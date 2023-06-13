@@ -148,6 +148,25 @@ class DatabaseHandler(context: Context) {
         })
     }
 
+    fun getAllBookingsByUserId(userId: String, callback: (List<Booking>) -> Unit) {
+        val query = database.child("bookings").orderByChild("userId").equalTo(userId)
+        query.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val bookingList = mutableListOf<Booking>()
+                for (bookingSnapshot in snapshot.children) {
+                    val booking = bookingSnapshot.getValue(Booking::class.java)
+                    booking?.let { bookingList.add(it) }
+                }
+                callback(bookingList)
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                callback(emptyList())
+            }
+        })
+    }
+
+
     fun getLatestBooking(callback: (Booking?) -> Unit) {
         val query = database.child("bookings").orderByKey().limitToLast(1)
         query.addValueEventListener(object : ValueEventListener {
@@ -316,7 +335,7 @@ class DatabaseHandler(context: Context) {
                 var hasPendingBookings = false
                 for (childSnapshot in snapshot.children) {
                     val booking = childSnapshot.getValue(Booking::class.java)
-                    if (booking?.status != "selesai" && booking?.status != "rating") {
+                    if (booking?.status != "selesai") {
                         hasPendingBookings = true
                         break
                     }
